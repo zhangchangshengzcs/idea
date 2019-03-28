@@ -65,4 +65,8 @@ public class BuyProductController {
         }
         return ResultVOUtil.success(productVOList);
     }
+    @GetMapping("/liqi")
+    public String test(){
+        return "李琪是傻逼!";
+    }
 }
