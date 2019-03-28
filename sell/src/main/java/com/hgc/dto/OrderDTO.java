@@ -1,10 +1,14 @@
 package com.hgc.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.hgc.dataobject.OrderDetail;
 import com.hgc.enums.OrderStatusEnum;
 import com.hgc.enums.PayStatusEnum;
+import com.hgc.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,6 +18,7 @@ import java.util.List;
  * @create: 2019/3/20 15:46
  **/
 @Data
+//@JsonInclude(JsonInclude.Include.NON_NULL)//此注解的作用：如果有属性是空，则不返回
 public class OrderDTO {
     /**订单id*/
     private String orderId;
@@ -32,8 +37,10 @@ public class OrderDTO {
     /**支付状态,默认为0未支付*/
     private Integer payStatus;
     /**创建时间*/
+//    @JsonSerialize(using = Date2LongSerializer.class)：此注解表示，引用指定类处理时间问题
     private Date createTime;
     /**修改时间*/
+//    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
     List<OrderDetail> orderDetailList;
 }
