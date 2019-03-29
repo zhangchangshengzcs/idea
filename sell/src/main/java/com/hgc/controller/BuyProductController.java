@@ -67,6 +67,6 @@ public class BuyProductController {
     }
     @GetMapping("/liqi")
     public String test(){
-        return "李琪是傻逼!";
+        return "李琪是傻逼!哈哈哈";
     }
 }
