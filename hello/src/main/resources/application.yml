@@ -1,0 +1,26 @@
+#server:
+#  port: 8088
+#  servlet:
+#    context-path: /tx
+#person:
+#  last-name: 张长生
+#  age: 18
+#  boss: true
+#  birth: 1996/7/17
+#  maps: {key1: value1,key2: value2}
+#  list: [dog,cat,horse]
+#  dog:
+#    name: ${person.hello}_dog
+#    age: ${random.int(10)}
+##    age: ${person.age}
+#  hello: 你好
+##person:
+##  lastName: 张长生
+##  age: 18
+##  boss: true
+##  birth: 1996/7/17
+##  maps: {key1: value1,key2: value2}
+##  list: [dog,cat,horse]
+##  dog:
+##    name: 旺财
+##    age: 3

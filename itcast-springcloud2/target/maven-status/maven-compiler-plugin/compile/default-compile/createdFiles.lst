@@ -1,0 +1,11 @@
+com\hgc\model\Item.class
+com\hgc\properties\ItemProperties.class
+com\hgc\feign\ItemFeignClient.class
+com\hgc\model\OrderDetail.class
+com\hgc\properties\OrderProperties.class
+com\hgc\service\ItemService.class
+com\hgc\model\Order.class
+com\hgc\controller\OrderController.class
+com\hgc\service\OrderService.class
+META-INF\spring-configuration-metadata.json
+com\hgc\ItcastSpringcloud2Application.class

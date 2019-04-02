@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "itcast",
+      "type": "com.hgc.properties.OrderProperties",
+      "sourceType": "com.hgc.properties.OrderProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "itcast.item",
+      "type": "com.hgc.properties.ItemProperties",
+      "sourceType": "com.hgc.properties.OrderProperties"
+    }
+  ],
+  "hints": []
+}

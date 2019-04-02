@@ -1,0 +1,10 @@
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\controller\OrderController.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\model\OrderDetail.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\properties\OrderProperties.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\model\Order.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\properties\ItemProperties.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\service\OrderService.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\ItcastSpringcloud2Application.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\model\Item.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\feign\ItemFeignClient.java
+D:\work_idea1\itcast-springcloud2\src\main\java\com\hgc\service\ItemService.java

@@ -1,0 +1,4 @@
+com\itcast\controller\ItemController.class
+com\itcast\service\ItemService.class
+com\itcast\ItcastSpringcloud1Application.class
+com\itcast\model\Item.class

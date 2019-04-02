@@ -1,0 +1,22 @@
+2019-03-13 14:22:55.447 INFO [main]com.hgc.SpringbootLogbackApplication.logStarting:50 -Starting SpringbootLogbackApplication on WIN-U7BD0L42NAU with PID 4188 (D:\work_idea1\springboot-logback\target\classes started by Administrator in D:\work_idea1\springboot-logback)
+2019-03-13 14:22:55.451 INFO [main]com.hgc.SpringbootLogbackApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2019-03-13 14:22:56.569 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8080 (http)
+2019-03-13 14:22:56.584 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-13 14:22:56.593 INFO [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-03-13 14:22:56.593 INFO [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-13 14:22:56.599 INFO [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-03-13 14:22:56.600 INFO [main]org.apache.catalina.core.AprLifecycleListener.log:173 -Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-03-13 14:22:56.600 INFO [main]org.apache.catalina.core.AprLifecycleListener.log:173 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-03-13 14:22:56.600 INFO [main]org.apache.catalina.core.AprLifecycleListener.log:173 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-03-13 14:22:57.665 INFO [main]org.apache.catalina.core.AprLifecycleListener.log:173 -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-03-13 14:22:57.759 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-03-13 14:22:57.759 INFO [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:296 -Root WebApplicationContext: initialization completed in 2229 ms
+2019-03-13 14:22:57.970 INFO [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-13 14:22:58.114 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-03-13 14:22:58.140 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-13 14:22:58.143 INFO [main]com.hgc.SpringbootLogbackApplication.logStarted:59 -Started SpringbootLogbackApplication in 3.41 seconds (JVM running for 4.316)
+2019-03-13 14:24:47.666 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-13 14:24:47.666 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-03-13 14:24:47.672 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 6 ms
+2019-03-13 14:24:47.692 INFO [http-nio-8080-exec-1]com.hgc.controller.UserController.testLog:21 -this is info
+2019-03-13 14:24:47.693 WARN [http-nio-8080-exec-1]com.hgc.controller.UserController.testLog:22 -this is warn
