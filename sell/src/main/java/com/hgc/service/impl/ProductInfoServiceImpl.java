@@ -4,11 +4,14 @@ import com.hgc.dao.ProductInfoDao;
 import com.hgc.dataobject.ProductInfo;
 import com.hgc.dto.CartDTO;
 import com.hgc.enums.ProductStatusEnum;
+import com.hgc.enums.ResultEnum;
+import com.hgc.exception.SellException;
 import com.hgc.service.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -40,13 +43,39 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         return this.productInfoDao.save(productInfo);
     }
 
+    //加库存
     @Override
+    @Transactional
     public void increaseStock(List<CartDTO> cartDTOList) {
+        for (CartDTO cartDTO :
+                cartDTOList) {
+            ProductInfo productInfo = productInfoDao.findById(cartDTO.getProductId()).get();
+            if (productInfo==null){
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+            Integer result=productInfo.getProductStock()+cartDTO.getProdcutQuantity();
+            productInfo.setProductStock(result);
+            productInfoDao.save(productInfo);
+        }
 
     }
 
+    //减库存
     @Override
+    @Transactional
     public void decreaseStock(List<CartDTO> cartDTOList) {
-
+        for (CartDTO cartDTO :
+                cartDTOList) {
+            ProductInfo productInfo=productInfoDao.getOne(cartDTO.getProductId());
+            if (productInfo==null){
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+            Integer result=productInfo.getProductStock()-cartDTO.getProdcutQuantity();
+            if (result<0){
+                throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
+            }
+            productInfo.setProductStock(result);
+            productInfoDao.save(productInfo);
+        }
     }
 }
